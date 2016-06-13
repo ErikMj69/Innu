@@ -1,0 +1,12 @@
+/* * *  LUCEGRAPHY.CSS  * * */
+
+.header_title_sp1 {
+  font-size: 500%;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+.header_title_sp2 {
+  font-size: 250%;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
