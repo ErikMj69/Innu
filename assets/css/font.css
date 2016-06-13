@@ -1,0 +1,8 @@
+/* FONT */
+@font-face {
+    font-family: margo;
+    src: url(../fonts/marguerite.ttf) format('truetype');
+}
+.margarita {
+    font-family: margo !important;
+}
