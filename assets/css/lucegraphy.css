@@ -1,5 +1,22 @@
 /* * *  LUCEGRAPHY.CSS  * * */
 
+@media screen and (max-width: 736px) {
+  #header {
+    background-color: #171717;
+  }
+  #logo {
+    text-align: left;
+  }
+}
+#logo {
+  left: 0em;
+}
+#logo img {
+  height: 100%;
+}
+#nav a:hover {
+  color: #000;
+}
 .header_title_sp1 {
   font-size: 500%;
   font-weight: bold;
