@@ -1,17 +1,22 @@
 <?php
 
-  echo "Hello World";
+  if(!isset($_POST["email"]) || empty($_POST["email"]) || !preg_match('/^([a-zA-Z0-9 \._]*)@([a-zA-Z0-9]*).([a-z]*)?/', $_POST['email']) ||
+     !isset($_POST["name"]) || empty($_POST["name"]) ||
+     !isset($_POST["message"]) || empty($_POST["message"]))
+     header("location: ../index.html");
+
+  $data = $_POST;
 
   $to      = 'contacto@lucegraphy.com.mx';
-  $subject = 'the subject';
-  $message = 'hello';
-  $headers = 'From: erik_mj69@hotmail.com' .
-      'Reply To: erik_mj69@hotmail.com' .
+  $subject = 'Contacto';
+  $message = $data['message'];
+  $headers = 'From: ' . $data['email'] .
+      'Reply To: ' . $data['email'] .
       'X-Mailer: PHP/' . phpversion();
 
   if(mail($to, $subject, $message, $headers))
-    echo "Sent";
+    header("location: ../index.html");
   else
-    echo "Not sent";
+    header("location: ../index.html");
 
 ?>
