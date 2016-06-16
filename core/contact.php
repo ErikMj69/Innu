@@ -8,7 +8,7 @@
   $data = $_POST;
 
   $to      = 'contacto@lucegraphy.com.mx';
-  $subject = 'Contacto';
+  $subject = 'Contacto - <' . $data['email'] . '>';
   $message = $data['message'];
   $headers = 'From: ' . $data['email'] .
       'Reply To: ' . $data['email'] .
