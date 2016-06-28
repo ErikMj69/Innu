@@ -1,11 +1,8 @@
 /* * *  LUCEGRAPHY.CSS  * * */
 
 @media screen and (max-width: 736px) {
-  #header {
-    background-color: #171717;
-  }
-  #logo {
-    text-align: left;
+  #logo img {
+    margin: 0 !important;
   }
 }
 #logo {
