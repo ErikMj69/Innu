@@ -1,0 +1,162 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("font-awesome.min.css");
+
+/*
+	Parallelism by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Basic */
+
+.parallelism {
+	background-color: transparent;
+	color: #999;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+}
+.parallelism a {
+	color: #fff;
+	color: rgba(255, 255, 255, 0.85);
+	text-decoration: none;
+	-moz-transition: color 0.25s ease-in-out;
+	-webkit-transition: color 0.25s ease-in-out;
+	-ms-transition: color 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
+}
+.parallelism-parent h2 {
+  color: #FFF;
+}
+.parallelism a:hover {
+	color: #d64760;
+}
+#p_reel article {
+  margin: 0;
+}
+
+/* Item */
+.p_item.p_thumb {
+	display: block;
+  float: left;
+	position: relative;
+  overflow: hidden;
+	background: #1a1f2c;
+	background: rgba(255, 255, 255, 0.25);
+	cursor: default;
+}
+.p_item.p_thumb h2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #1a1f2c;
+  color: #FFF;
+	background: rgba(18, 21, 29, 0.85);
+	width: 100%;
+	padding: 1em;
+  font-size: 80%;
+	font-weight: 400;
+  letter-spacing: -0.05em;
+	line-height: 1em;
+	z-index: 2;
+}
+.p_item.p_thumb img {
+	display: block;
+	z-index: 1;
+}
+
+/* Icons */
+.icon {
+	position: relative;
+	text-decoration: none;
+}
+.icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+  text-transform: none !important;
+}
+.icon > .label {
+	display: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 737px) {
+
+	/* Parallelism */
+	.parallelism {
+		-moz-transition: -moz-filter 0.25s ease-in-out;
+		-webkit-transition: -webkit-filter 0.25s ease-in-out;
+		-ms-transition: -ms-filter 0.25s ease-in-out;
+		transition: filter 0.25s ease-in-out;
+	}
+	.parallelism.overlayed {
+	  -moz-filter: blur(3px);
+		-webkit-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(3px);
+	}
+
+	/* Main */
+	#p_main {
+		width: 100%;
+		position: absolute;
+	}
+
+	/* Reel */
+	#p_reel {
+		position: relative;
+		opacity: 0;
+	}
+	#p_reel .item {
+		display: block;
+		float: left;
+		position: relative;
+		overflow: hidden;
+	}
+
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+
+  /* Item */
+	.p_item {
+		border: 0;
+	}
+  .p_item.p_thumb {
+		width: 50%;
+		float: left;
+		height: 9em;
+		position: relative;
+	}
+	.p_item.p_thumb h2 {
+		display: none;
+	}
+	.p_item.p_thumb a {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.p_item.p_thumb img {
+		display: none;
+	}
+
+	/* Wrapper */
+	.parallelism.overlayed {
+	  -moz-filter: blur(1px);
+		-webkit-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
+
+	/* Main */
+	#p_main {
+		overflow: hidden;
+	}
+
+}

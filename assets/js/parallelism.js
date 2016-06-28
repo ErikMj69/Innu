@@ -213,7 +213,7 @@ var parallelism = (function($) { var _ = {
 
 							if (_.settings.centerVertically)
 								_.objects.main
-									.css('top', '50%')
+									.css('top', '60%')
 									.css('margin-top', (-1 * (_.objects.main.outerHeight() / 2)) + _.settings.verticalNudge);
 
 						// Resize/reposition SZs.
@@ -382,7 +382,7 @@ var parallelism = (function($) { var _ = {
 							if (_.settings.scrollWheelTarget == 'reel')
 								st = _.objects.main[0];
 							else
-								st = _.objects.window[0];
+								st = _.objects.main[0];
 
 							st.addEventListener('DOMMouseScroll', scrollHandler, false);
 							st.addEventListener('mousewheel', scrollHandler, false);
@@ -490,7 +490,7 @@ var parallelism = (function($) { var _ = {
 						overlayOpacity: _.settings.popupOverlayOpacity,
 						popupCloserText: '',
 						popupLoaderText: '',
-						selector: '.thumb a.image',
+						selector: '.p_thumb a.p_image',
 						usePopupCaption: true,
 						usePopupCloser: false,
 						usePopupDefaultStyling: false,
@@ -542,7 +542,7 @@ var parallelism = (function($) { var _ = {
 						overlayColor: _.settings.popupOverlayColor,
 						overlayOpacity: _.settings.popupOverlayOpacity,
 						popupSpeed: 0,
-						selector: '.thumb a.image',
+						selector: '.p_thumb a.p_image',
 						useBodyOverflow: false,
 						usePopupCaption: false,
 						usePopupCloser: false,
@@ -589,11 +589,11 @@ var parallelism = (function($) { var _ = {
 
 					// Objects.
 						_.objects.window = $(window),
-						_.objects.wrapper = $('#wrapper'),
+						_.objects.wrapper = $('.parallelism'),
 						_.objects.body = $('body'),
-						_.objects.main = $('#main'),
-						_.objects.reel = $('#reel'),
-						_.objects.items = _.objects.main.find('.item');
+						_.objects.main = $('#p_main'),
+						_.objects.reel = $('#p_reel'),
+						_.objects.items = _.objects.main.find('.p_item');
 
 					// Mode.
 						_.objects.window.on('load', function() {

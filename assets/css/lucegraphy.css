@@ -12,7 +12,9 @@
   left: 0em;
 }
 #logo img {
-  height: 100%;
+  margin-top: 5%;
+  margin-left: 20px;
+  height: 90%;
 }
 #nav a:hover {
   color: #000;
@@ -26,4 +28,18 @@
   font-size: 250%;
   font-weight: bold;
   letter-spacing: 20px;
+}
+
+/* PARALLELISM */
+.parallelism-container {
+  overflow: hidden;
+}
+.parallelism-parent {
+  height: 100%;
+}
+.parallelism-parent > header {
+  margin: 0;
+}
+.parallelism {
+  height: 100%;
 }
