@@ -220,8 +220,8 @@ var parallelism = (function($) { var _ = {
 							window.setTimeout(function() {
 
 								$SZ
-									.css('height', _.objects.main.outerHeight())
-									.css('top', _.objects.main.offset().top);
+									.css('height', _.objects.window.outerHeight())
+									.css('top', _.objects.window.offset().top);
 
 							}, _.settings.introDelay);
 
