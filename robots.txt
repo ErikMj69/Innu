@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /core/
+Disallow: /assets/
+Disallow: /sitemap.xml
+Disallow: /LICENSE
+Disallow: /LICENSE.txt
+Disallow: /README.txt

@@ -16,7 +16,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-	
+
     }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -47,6 +47,10 @@
 
 	body {
 		-webkit-text-size-adjust: none;
+	}
+
+	.text-center {
+		text-align: center !important;
 	}
 
 /* Box Model */
@@ -2878,8 +2882,8 @@
 
 /* Intro */
 
-	#intro {
-		background: url("images/overlay.png"), url("../../images/Intro.jpg");
+	#home {
+		background: url("images/overlay.png"), url("../images/Intro.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2888,8 +2892,8 @@
 
 /* One */
 
-	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+	#landscape {
+		background: url("images/overlay.png"), url("../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2897,8 +2901,8 @@
 
 /* Two */
 
-	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+	#aboutus {
+		background: url("images/overlay.png"), url("../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2906,7 +2910,7 @@
 
 /* Work */
 
-	#work .row.images .image {
+	#portfolio .row.images .image {
 		-moz-transition: all 1s ease;
 		-webkit-transition: all 1s ease;
 		-ms-transition: all 1s ease;
@@ -2921,23 +2925,23 @@
 		opacity: 1.0;
 	}
 
-	#work .row.images.inactive .image {
+	#portfolio .row.images.inactive .image {
 		opacity: 0;
 	}
 
-		#work .row.images.inactive .image.from-left {
+		#portfolio .row.images.inactive .image.from-left {
 			left: -14em;
 		}
 
-		#work .row.images.inactive .image.from-right {
+		#portfolio .row.images.inactive .image.from-right {
 			left: 14em;
 		}
 
-		#work .row.images.inactive .image.from-top {
+		#portfolio .row.images.inactive .image.from-top {
 			top: -7em;
 		}
 
-		#work .row.images.inactive .image.from-bottom {
+		#portfolio .row.images.inactive .image.from-bottom {
 			top: 7em;
 		}
 
@@ -3482,7 +3486,5 @@
 
 			}
 
-       
+
 	}
-
-

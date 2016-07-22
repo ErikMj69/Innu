@@ -40,3 +40,12 @@
 .parallelism {
   height: 100%;
 }
+
+/* SITEMAP */
+.sitemap-table thead {
+  font-weight: bold;
+  text-align: center;
+}
+.sitemap-table th {
+  width: 50%;
+}

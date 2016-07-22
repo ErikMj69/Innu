@@ -99,8 +99,8 @@
 								leave:		function() { $(this).addClass('inactive'); }
 							});
 
-					// Work.
-						$('#work')
+					// Portfolio
+						$('#portfolio')
 							.scrollex({
 								top:		'40vh',
 								bottom:		'30vh',
@@ -175,8 +175,8 @@
 						$('.main.style2')
 							.unscrollex();
 
-					// Work.
-						$('#work')
+					// Portfolio
+						$('#portfolio')
 							.unscrollex();
 
 					// Contact.
