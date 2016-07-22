@@ -49,6 +49,14 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.show {
+		display: block !important;
+	}
+
+	.hide {
+		display: none !important;
+	}
+
 	.text-center {
 		text-align: center !important;
 	}

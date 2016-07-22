@@ -16,8 +16,13 @@
 		<link rel="stylesheet" href="assets/css/font.css" />
 		<link rel="stylesheet" href="assets/css/lucegraphy.css" />
 		<link rel="stylesheet" href="assets/css/parallelism.css" />
+		<link rel="stylesheet" href="assets/css/loader.css" />
 	</head>
 	<body>
+
+		<div class="loader">
+			<div class="dots-loader"></div>
+		</div>
 
 		<!-- Header -->
 		<header id="header">
@@ -170,7 +175,7 @@
 				<div class="box container 75%">
 
 					<!-- Contact Form -->
-					<form method="post" action="core/contact.php">
+					<form method="post" id="contactForm">
 						<div class="row 50%">
 							<div class="6u 12u(mobile)"><input type="text" name="name" placeholder="Nombre" /></div>
 							<div class="6u 12u(mobile)"><input type="email" name="email" placeholder="Email" /></div>
@@ -181,7 +186,7 @@
 						<div class="row">
 							<div class="12u">
 								<ul class="actions">
-									<li><input type="submit" value="Enviar Mensaje" /></li>
+									<li><input type="submit" id="submitContact" value="Enviar Mensaje" /></li>
 								</ul>
 							</div>
 						</div>
@@ -220,6 +225,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script src="assets/js/main.js"></script>
 		<script src="assets/js/parallelism.js"></script>
+		<script src="assets/js/contact.js"></script>
 
 	</body>
 </html>
