@@ -15,8 +15,10 @@
       'X-Mailer: PHP/' . phpversion();
 
   if(mail($to, $subject, $message, $headers))
-    header("location: ../index.html");
+    echo json_encode(array("status" => true, "message" => "Su mensaje ha sido enviado. El equipo de soporte te contactará en breve."));
   else
-    header("location: ../index.html");
+    echo json_encode(array("status" => true, "message" => "Tu mensaje no pudo ser enviado. Intenta nuevamente más tarde."));
+
+  die;
 
 ?>
