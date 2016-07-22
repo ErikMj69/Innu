@@ -16,7 +16,7 @@
       setTimeout(function() {
         $('.loader').removeClass("show").addClass("hide");
         $('#contactForm').trigger("reset");
-        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-green").delay(3000).fadeOut(1000).removeClass("msg-green");
+        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-green").delay(3000).fadeOut(1000, function() { $('.message').removeClass("msg-green"); });
       }, 2000);
 
     }).fail(function(data) {
@@ -24,7 +24,7 @@
       setTimeout(function() {
         $('.loader').removeClass("show").addClass("hide");
         $('#contactForm').trigger("reset");
-        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-red").delay(3000).fadeOut(1000).removeClass("msg-red");
+        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-red").delay(3000).fadeOut(1000, function() { $('.message').removeClass("msg-red"); });
       }, 2000);
 
     });
