@@ -15,14 +15,16 @@
 
       setTimeout(function() {
         $('.loader').removeClass("show").addClass("hide");
-        console.log("Success: " + JSON.parse(data).message);
+        $('#contactForm').trigger("reset");
+        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-green").delay(3000).fadeOut(1000).removeClass("msg-green");
       }, 2000);
 
     }).fail(function(data) {
 
       setTimeout(function() {
         $('.loader').removeClass("show").addClass("hide");
-        console.log("Error: " + JSON.parse(data).message);
+        $('#contactForm').trigger("reset");
+        $('.message').html(JSON.parse(data).message).fadeIn(1000).addClass("msg-red").delay(3000).fadeOut(1000).removeClass("msg-red");
       }, 2000);
 
     });

@@ -49,3 +49,25 @@
 .sitemap-table th {
   width: 50%;
 }
+
+/* MESSAGE */
+.message {
+  border-radius: 5px;
+	display: none;
+  padding: 1% 0;
+	right: 50px;
+	bottom: 50px;
+	position: fixed;
+	width: 30%;
+	z-index: 10000000;
+
+  color: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+.msg-green {
+  background: #a8d5a3;
+}
+.msg-red {
+  background: #e95a5a;
+}

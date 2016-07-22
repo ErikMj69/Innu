@@ -2,8 +2,10 @@
 
   if(!isset($_POST["email"]) || empty($_POST["email"]) || !preg_match('/^([a-zA-Z0-9 \._]*)@([a-zA-Z0-9]*).([a-z]*)?/', $_POST['email']) ||
      !isset($_POST["name"]) || empty($_POST["name"]) ||
-     !isset($_POST["message"]) || empty($_POST["message"]))
-     header("location: ../index.html");
+     !isset($_POST["message"]) || empty($_POST["message"])) {
+     echo json_encode(array("status" => false, "message" => "Error en el proceso de datos."));
+     die;
+  }
 
   $data = $_POST;
 
@@ -17,7 +19,7 @@
   if(mail($to, $subject, $message, $headers))
     echo json_encode(array("status" => true, "message" => "Su mensaje ha sido enviado. El equipo de soporte te contactará en breve."));
   else
-    echo json_encode(array("status" => true, "message" => "Tu mensaje no pudo ser enviado. Intenta nuevamente más tarde."));
+    echo json_encode(array("status" => false, "message" => "Tu mensaje no pudo ser enviado. Intenta nuevamente más tarde."));
 
   die;
 
